@@ -92,7 +92,9 @@ function buildCharts(sample) {
     var barData= [trace1];
     // 9. Create the layout for the bar chart. 
     var barLayout = {
-     title: "Top 10 Bacteria Cultures Found"
+     title: "Top 10 Bacteria Cultures Found",
+     plot_bgcolor: 'rgba(255, 240, 240,1)',
+     paper_bgcolor: 'rgba(255, 240, 240,1)'
     };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout)
@@ -119,6 +121,8 @@ function buildCharts(sample) {
     var bubbleData=[bubbleTrace]
     // 2. Create the layout for the bubble chart.
     var bubbleLayout = {
+      plot_bgcolor: 'rgba(255, 240, 240,1)',
+      paper_bgcolor: 'rgba(255, 240, 240,1)',
       title: {
         text: "Bacteria Cultures Per Sample",
         font: {
@@ -132,6 +136,7 @@ function buildCharts(sample) {
         family:'Courier New, monospace',
         size: 18
       }
+      
     }
     };
     
@@ -193,7 +198,8 @@ function buildCharts(sample) {
       width: 600,
       height: 500,
       margin: { t: 25, r: 25, l: 25, b: 25 },
-      paper_bgcolor: "white",
+      plot_bgcolor: 'rgba(255, 240, 240,1)',
+      paper_bgcolor: 'rgba(255, 240, 240,1)',
       font: { color: "black", family: "Arial" }
     };
 
